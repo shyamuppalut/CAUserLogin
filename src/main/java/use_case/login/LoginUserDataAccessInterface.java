@@ -5,7 +5,7 @@ import entity.User;
 /**
  * DAO for the Login Use Case.
  */
-@SuppressWarnings({"checkstyle:RegexpMultiline", "checkstyle:SuppressWarnings"})
+@SuppressWarnings({"checkstyle:RegexpMultiline", "checkstyle:SuppressWarnings", "checkstyle:SummaryJavadoc"})
 public interface LoginUserDataAccessInterface {
 
     /**
@@ -30,4 +30,10 @@ public interface LoginUserDataAccessInterface {
 
     @SuppressWarnings("checkstyle:MissingJavadocMethod")
     void setCurrentUser(String name);
+
+    /**
+     * @return the current username
+     */
+    @SuppressWarnings("checkstyle:MethodName")
+    String CurrentUser();
 }
