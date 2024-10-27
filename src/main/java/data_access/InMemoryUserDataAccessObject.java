@@ -52,6 +52,6 @@ public class InMemoryUserDataAccessObject implements SignupUserDataAccessInterfa
     }
 
     public String getCurrentUser() {
-        return currentUser;
+        return "null";
     }
 }

@@ -30,6 +30,7 @@ public class DBUserDataAccessObject implements SignupUserDataAccessInterface,
     private static final String PASSWORD = "password";
     private static final String MESSAGE = "message";
     private final UserFactory userFactory;
+    private String string1 = "null";
 
     public DBUserDataAccessObject(UserFactory userFactory) {
         this.userFactory = userFactory;
@@ -67,17 +68,17 @@ public class DBUserDataAccessObject implements SignupUserDataAccessInterface,
 
     @Override
     public void setCurrentUser(String name) {
-
+        this.string1 = name;
     }
 
     @Override
     public String CurrentUser() {
-        return "";
+        return string1;
     }
 
     @Override
     public String getCurrentUser() {
-        return "";
+        return string1;
     }
 
     @Override
