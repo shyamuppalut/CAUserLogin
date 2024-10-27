@@ -36,4 +36,7 @@ public interface LoginUserDataAccessInterface {
      */
     @SuppressWarnings("checkstyle:MethodName")
     String CurrentUser();
+
+    @SuppressWarnings("checkstyle:MissingJavadocMethod")
+    String getCurrentUser();
 }
